@@ -1,0 +1,298 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+.whitebox {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    max-width: 1800px;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    width: 10px;
+    height: 11px; 
+    display: flex; 
+    align-items: center;
+}
+.logo img {
+    width: 250px;
+    height: 50px; /* Adjust width as needed */
+    margin-left: 0px;
+    display: flex;
+    margin-right: 10px;
+     /* Add some spacing between logo and text */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+nav ul li {
+    margin-right: 20px;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    background-image: url('REVOLUTIONIZING AGRICULTURE.png');
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 0px 0;
+    background-position: center top;
+    margin: 0; 
+    min-height: 400px;
+    display: flex;
+}
+.hero .content-wrapper {
+    position: relative; /* Add this line to position the buttons relative to this container */
+}
+.hero-text {
+    position: absolute;
+    top: 50%; /* Position in the middle vertically */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.background-buttons {
+    position: absolute;
+    left: 20px; 
+    top: 50%; 
+    transform: translateY(-50%);
+    bottom: 20px; 
+}
+
+.background-buttons {
+    position: absolute;
+    left: 20px;  
+    transform: translateY(-50%); 
+    top: 80%;
+    display: flex;
+    gap: 15px;
+}
+.hero-button {
+    display: inline-flex;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.hero-button:hover {
+    background-color: #ff8533;
+
+}
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+/*DIV SERVICES*/
+.Services {
+    display: flex;
+    justify-content:space-evenly; /* Horizontally center the links */
+    width: 100%;
+    align-items:stretch ; 
+    padding: 8px 0;
+    object-fit: cover;
+    display: flex;
+    
+    margin-top: 0px;
+}
+
+.service-link {
+    display: inline-flex;
+    justify-content: center;
+
+    align-items: center;
+    height: 40px;
+    width: 600px;
+    background-color: #DF3F3F;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 55px;
+    margin: 0 10px; /* Add some horizontal spacing between links */
+    size-adjust: ;
+    transition: background-color 0.3s ease; /* Add smooth transition on hover */
+}
+
+.service-link:hover {
+    background-color: #ff8533;
+}
+
+
+
+
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    font-size: 14px;
+}
+
+.footer-content ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-content ul li {
+    margin-right: 20px;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 10px 20px;
+        position: absolute;
+        bottom: 20px; 
+        left: 50%;
+        transform: translateX(-50%)
+    }
+
+    .service-card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .footer-content p {
+        font-size: 12px;
+    }
+    
+}
+.background-section {
+
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height:calc(100vh - 112px);
+    overflow:hidden;
+    padding-bottom: 60px;
+}
+
+.text{
+    font-size: 4rem;
+    color: black;
+    width: 80%;
+    text-align: left;
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
